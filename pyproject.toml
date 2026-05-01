@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+testpaths = ["feature_engine/tests", "training/tests", "inference/tests"]
+addopts = "-v --tb=short"
+markers = [
+    "integration: marks tests that require external services (Redis, Postgres)",
+]
+
+[project]
+name = "rider-driver-matching"
+version = "0.1.0"
+description = "ML-powered rider-driver matching with real-time features"
+requires-python = ">=3.11"
